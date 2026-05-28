@@ -455,5 +455,70 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <button type="button" class="modal-close-btn">
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">
+          Leave your contacts and we will call your back
+        </p>
+        <form class="input-info">
+          <div class="modal-field">
+          <label for="name" class="input-label">Name</label>
+          <div class="input-wrap">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            class="input-name"
+          />
+          </div>
+          </div>
+          <div class="modal-field">
+          <label for="phone" class="input-label">Phone</label>
+          <div class="input-wrap">
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone"
+            class="input-phone"
+          />
+          </div>
+          </div>
+          <div class="modal-field">
+          <label for="email" class="input-label">Email</label>
+          <div class="input-wrap">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            class="input-email"
+          />
+         <div class="modal-field">
+           <label for="comment" class="input-label">Comment</label>
+           <div class="input-wrap">
+          <textarea name="user-comment" class="input-text" id="comment"
+            placeholder="Text input" 
+            rows="4"></textarea>
+          </div>
+          <label class="checkbox-label">
+            <input type="checkbox" name="agree" id="agree" required class="visuality-hidden"/>
+            <span class="checkbox-icon"></span>
+
+            <span class="checkbox-text">
+            I accept the terms of the <span>Privacy Policy</span>
+            </span>
+          </label>
+            <button type="submit" class="modal-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
