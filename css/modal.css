@@ -33,17 +33,27 @@
   width: 24px;
   height: 24px;
   gap: 0px;
-  top: 0;
-  right: 0;
-  margin-top: 24px;
-  margin-right: 24px;
-  margin-left: 336px;
-  margin-bottom: 24px;
+  top: 24px;
+  right: 24px;
   background-color: #e7e9fc;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #4d5ae5;
+  border: 1px solid #4d5ae5;
+}
+
+.modal-close-btn:hover .modal-icon,
+.modal-close-btn:focus .modal-icon {
+  fill: #fff;
+}
 .modal-icon {
   fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-info {
@@ -79,6 +89,7 @@
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-name:hover,
@@ -104,6 +115,7 @@
   resize: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-text:hover,
@@ -133,6 +145,12 @@
   color: #fff;
   border-radius: 4px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #404bbf;
 }
 
 .input-wrap {
@@ -145,9 +163,23 @@
   left: 12px;
   transform: translateY(-50%);
   fill: #2e2f42;
-  transition: fill 0.3s ease;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-icon:hover {
   fill: #4d5ae5;
+}
+
+.checkbox-text {
+  color: #8e8f99;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.privacy-policy {
+  color: #4d5ae5;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
 }
